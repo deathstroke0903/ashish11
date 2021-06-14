@@ -27,14 +27,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common octavi stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := octavi_vince
+PRODUCT_NAME := xtended_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
