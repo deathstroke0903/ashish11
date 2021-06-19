@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_vince.mk
+    $(LOCAL_DIR)/ssos_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_vince-user \
-    xtended_vince-userdebug \
-    xtended_vince-eng
+    ssos_vince-user \
+    ssos_vince-userdebug \
+    ssos_vince-eng
