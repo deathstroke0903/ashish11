@@ -29,7 +29,7 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common ssos stuff.
 $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Device identifier. This must come after all inclusions
