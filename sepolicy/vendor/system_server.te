@@ -18,3 +18,12 @@ allow system_server proc_touchpanel:lnk_file read;
 
 # Vibrator
 allow system_server sysfs_vibrator:file read;
+
+
+# Smart charging
+allow system_server sysfs_battery_supply:file { getattr open read write };
+
+# Other things
+allow system_server app_zygote:process { getpgid };
+allow system_server hal_light_default:process { signal };
+
