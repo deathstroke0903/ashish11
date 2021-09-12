@@ -233,10 +233,12 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl
 	
 #HALS
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom-caf/msm8996/audio \
-    hardware/qcom-caf/msm8996/display \
-    hardware/qcom-caf/msm8996/media
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
 
 # Healthd
 PRODUCT_PACKAGES += \
@@ -489,3 +491,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Platform
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8996
