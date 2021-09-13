@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_vince.mk
+    $(LOCAL_DIR)/styx_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_vince-user \
-    spark_vince-userdebug \
-    spark_vince-eng
+    styx_vince-user \
+    styx_vince-userdebug \
+    styx_vince-eng

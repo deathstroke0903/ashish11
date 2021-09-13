@@ -27,19 +27,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common spark stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common styx stuff.
+$(call inherit-product, vendor/styx/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
-# Maintainer
-SPARK_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-   ro.spark.maintainer=DEATHSTROKE \
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := spark_vince
+PRODUCT_NAME := styx_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
